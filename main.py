@@ -8,7 +8,7 @@ import folium
 
 
 key = "39bb77b5dea24950824aa1b5ef45e12e" #Geocoder API Key need to paste here "your key" 
-number = input("enter:   ")
+number = input("Please enter a phone nummber:   ")
 new_number = phonenumbers.parse(number)
 location = geocoder.description_for_number(new_number, "en")
 print(location)
@@ -31,5 +31,5 @@ folium.Marker([lat, lng], popup= location).add_to(my_map)
 
 my_map.save("location.html")
 
-print("location tracking completed")
+print("Location tracking completed")
 print("Thank you")
