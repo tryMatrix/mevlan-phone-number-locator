@@ -7,7 +7,7 @@ import folium
 
 
 
-key = "39bb77b5dea24950824aa1b5ef45e12e" #Geocoder API Key need to paste here "your key" 
+key = "" #Geocoder API Key need to paste here "your key" #"Vendosni kodin e API"
 number = input("Please enter a phone nummber:   ")
 new_number = phonenumbers.parse(number)
 location = geocoder.description_for_number(new_number, "en")
